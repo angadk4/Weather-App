@@ -16,13 +16,12 @@ const Search = ({ onSearchChange }) => {
                 return {
                     options: response.data.map((city) => {
                         return {
-                            value: `${city.latitude} ${city.longutude}`,
-                            label: `${city.name} ${city.countryCode}`,
+                            value: `${city.latitude} ${city.longitude}`,
+                            label: `${city.name}, ${city.countryCode}`,
                         };
                     }),
                 };
-            })
-            .catch((err) => console.error)
+            });
     };
 
     const handleOnChange = (searchData) => {
