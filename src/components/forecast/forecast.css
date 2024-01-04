@@ -1,4 +1,7 @@
 .title {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 23px;
     font-weight: 700;
 }
@@ -13,29 +16,48 @@
     cursor: pointer;
     font-size: 14px;
     padding: 5px 20px;
+    justify-content: space-between;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+.daily-item:hover {
+    background-color: #e2e2e2;
+    border: 1px solid #000;
+}
+
+.arrow {
+    font-size: 20px;
+    color: #646464;
 }
 
 .icon-small {
+    margin-left: 15px;
     width: 40px;
 }
 
 .day {
     color: #212121;
-    flex: 1 1;
     font-weight: 600;
     margin-left: 15px;
 }
 
+.right-group {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.temp {
+    text-align: right;
+}
+
 .description {
-    flex: 1 1;
-    margin-right: 15px;
     text-align: right;
 
 }
-
-.min-max {
-    color: #757575
+.feels-like {
+    color: #757575;
+    text-align: right;
 }
 
 .daily-details-grid {
